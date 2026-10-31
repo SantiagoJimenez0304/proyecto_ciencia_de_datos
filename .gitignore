@@ -6,7 +6,7 @@
 # website: http://jupyter.org/
 
 .ipynb_checkpoints
-*/.ipynb_checkpoints/*
+/.ipynb_checkpoints/
 
 # IPython
 profile_default/
@@ -17,7 +17,7 @@ ipython_config.py
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
-__pycache__/
+_pycache_/
 *.py[cod]
 *$py.class
 
@@ -125,7 +125,7 @@ target/
 .pdm.toml
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+_pypackages_/
 
 # Celery stuff
 celerybeat-schedule
@@ -183,5 +183,9 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+data/*
+models/*
+reports/*
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
