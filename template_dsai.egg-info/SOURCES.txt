@@ -1,6 +1,8 @@
 README.md
 pyproject.toml
+flows/00_ingestion.py
 flows/__init__.py
+flows/job.py
 flows/common/__init__.py
 flows/common/config.py
 flows/common/hashing.py
@@ -11,3 +13,5 @@ template_dsai.egg-info/SOURCES.txt
 template_dsai.egg-info/dependency_links.txt
 template_dsai.egg-info/requires.txt
 template_dsai.egg-info/top_level.txt
+tests/test_00_ingestion.py
+tests/test_job.py
