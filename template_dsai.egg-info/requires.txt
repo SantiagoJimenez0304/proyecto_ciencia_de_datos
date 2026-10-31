@@ -1,0 +1,15 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.12
+scikit-learn>=1.4
+pyarrow>=15
+joblib>=1.3
+python-dotenv>=1.0
+
+[dev]
+pytest>=8
+ruff>=0.4
+jupyterlab>=4
+nbstripout>=0.7

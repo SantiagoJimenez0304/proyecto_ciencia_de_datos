@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+template_dsai.egg-info/PKG-INFO
+template_dsai.egg-info/SOURCES.txt
+template_dsai.egg-info/dependency_links.txt
+template_dsai.egg-info/requires.txt
+template_dsai.egg-info/top_level.txt
