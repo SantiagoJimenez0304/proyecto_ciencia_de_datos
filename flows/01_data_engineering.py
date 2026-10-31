@@ -71,3 +71,12 @@ def run(in_dir: Path = BRONZE, out_dir: Path = SILVER) -> Path:
     drop_original_columns(silver).to_parquet(out_dir / SILVER_FINAL_NAME, index=False)
     log.info("Silver listo: %d filas, %d columnas", *silver.shape)
     return out_dir / SILVER_NAME
+
+def add_person(df: pd.DataFrame) -> pd.DataFrame:
+    """Agrega 'Person': 'child' si Age < 16; si no, el valor de Sex.
+
+    Regla para edad desconocida (NaN): se usa Sex. Esto subestima a los niños
+    sin edad registrada; el sesgo se cuantifica en el Reto 8.1.
+    """
+    # TODO: copia df; np.where(df['Age'] < 16, 'child', df['Sex'])
+    raise NotImplementedError
