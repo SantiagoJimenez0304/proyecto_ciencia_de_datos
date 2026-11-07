@@ -31,3 +31,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 
+[tool.ruff.lint]
+ignore = ["N999", "FURB177"]
+
+

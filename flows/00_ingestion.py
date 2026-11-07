@@ -6,7 +6,7 @@ un archivo aparte (_ingestion_metadata.json); nunca se alteran los datos.
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd
@@ -54,7 +54,7 @@ def run(source: str | None = None, n_labeled: int | None = None, out_dir: Path =
 
     metadata = {
         "source": source,
-        "ingested_at": datetime.now(timezone.utc).isoformat(),
+        "ingested_at": datetime.now(UTC).isoformat(),
         "rows_labeled": len(labeled),
         "rows_unlabeled": len(unlabeled),
         "columns": list(df.columns),

@@ -1,6 +1,7 @@
 import logging
 import sys
 
+
 def get_logger(name: str, log_file: str = "job.log") -> logging.Logger:
     logger = logging.getLogger(name)
     if not logger.handlers:
